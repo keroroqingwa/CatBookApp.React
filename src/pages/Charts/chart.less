@@ -1,0 +1,109 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+.salesExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    color: @text-color;
+    margin-left: 24px;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+  a.active{
+    color: @primary-color;
+    font-weight: bold;
+  }
+}
+
+.salesCard {
+  .salesBar {
+    padding: 0 0 32px 32px;
+  }
+  .salesRank {
+    padding: 0 32px 32px 72px;
+  }
+  :global {
+    .ant-tabs-bar {
+      padding-left: 16px;
+      .ant-tabs-nav .ant-tabs-tab {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        line-height: 24px;
+      }
+    }
+    .ant-tabs-extra-content {
+      padding-right: 24px;
+      line-height: 55px;
+    }
+    .ant-card-head {
+      position: relative;
+    }
+  }
+}
+
+.salesCardExtra {
+  height: 68px;
+}
+
+@media screen and (max-width: @screen-sm) {
+  .salesExtraWrap {
+    display: none;
+  }
+  .salesCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+.chart_card {
+  :global {
+    .ant-card-body {
+      padding: 0 !important;
+      padding-top: 20px;
+      min-height: 500px;
+    }
+    h3 {
+      padding: 20px 0 10px 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.table_noborder {
+  :global {
+    .ant-table-small {
+      border: none !important;
+    }
+  }
+}
+
+.modal_analysis_info{
+  :global {
+    .t {
+      font-weight: bold;
+    }
+    h3 {
+    }
+  }
+}
+
+.legend_bottom_title {
+  padding: 20px;
+  color: #666;
+}
+
+.query_data {
+  padding-left: 20px;
+  color: #999;
+}
