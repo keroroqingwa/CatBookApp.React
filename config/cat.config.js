@@ -13,8 +13,8 @@ const catconfig = {
   /**
    * 数据接口的代理
    */
-  proxy: 'http://localhost:53518',
-  //proxy: 'https://v3.backstageApi.book.somethingwhat.com',
+  //proxy: 'http://localhost:53518',
+  proxy: 'https://v3.backstageApi.book.somethingwhat.com',
 };
 
 export default catconfig;
