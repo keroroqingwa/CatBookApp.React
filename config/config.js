@@ -123,4 +123,5 @@ export default {
     htmlSuffix: true,
     dynamicRoot: true,
   },
+  hash: true, // 文件打包加hash 解决浏览器缓存问题
 };
