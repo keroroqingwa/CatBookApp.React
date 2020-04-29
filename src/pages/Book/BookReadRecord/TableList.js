@@ -52,7 +52,7 @@ class TableList extends Component {
   getPaginationConfig = _total => {
     const { skipCount } = this.state;
     return {
-      current: skipCount,
+      skipCount,
       ...paginationConfig,
       total: _total,
     };
