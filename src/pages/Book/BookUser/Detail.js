@@ -100,8 +100,8 @@ class Detail extends Component {
               <Description term="省份">{resByGetByOpenid.province}</Description>
               <Description term="城市">{resByGetByOpenid.city}</Description>
               <Description term="语言">{resByGetByOpenid.language}</Description>
-              <Description term="创建时间">{resByGetByOpenid.creationTime}</Description>
-              <Description term="更新时间">{resByGetByOpenid.lastModificationTime}</Description>
+              <Description term="创建时间">{moment(resByGetByOpenid.creationTime).format('YYYY/MM/DD HH:mm:ss')}</Description>
+              <Description term="更新时间">{!!resByGetByOpenid.lastModificationTime === true ? moment(resByGetByOpenid.creationTime).format('YYYY/MM/DD HH:mm:ss') : '--'}</Description>
               {/* <Description term="阅读时长(分钟)">{resByGetByOpenid.Read_Minute}</Description> */}
             </DescriptionList>
           )}
