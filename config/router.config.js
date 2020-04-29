@@ -35,7 +35,7 @@ export default [
             icon: 'heart',
             path: '/book/user-preference-list',
             component: './Book/BookUserPreference/TableList',
-          },          
+          },
           {
             name: 'readrecord-list',
             icon: 'read',
