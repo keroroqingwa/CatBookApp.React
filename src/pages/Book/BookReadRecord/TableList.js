@@ -176,6 +176,8 @@ class TableList extends Component {
             return '笔趣阁';
           else if (val === 2)
             return '外国文学';
+          else if (val === 3)
+            return '新笔趣阁';
         },
       },
       {
