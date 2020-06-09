@@ -27,6 +27,11 @@ class TableList extends Component {
   componentDidMount() {
     this.setColumns();
     const { openid } = getPageQuery();
+    this.setState({
+      formValues: {
+        openid,
+      },
+    });
     this.loadData({ openid });
   }
 
